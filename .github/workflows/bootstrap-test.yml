@@ -1,0 +1,16 @@
+name: Bootstrap Test
+
+on: [push, pull_request]
+
+jobs:
+  macos:
+    runs-on: macos-latest
+    steps:
+      - name: Run bootstrap
+        run: |
+          /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/errmakov/dotbox/master/bootstrap.sh)"
+      - name: Verify Python
+        run: python3 --version
+      - name: Verify yt-dlp
+        run: yt-dlp --version
+
