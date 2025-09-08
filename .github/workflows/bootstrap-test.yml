@@ -13,4 +13,7 @@ jobs:
         run: python3 --version
       - name: Verify yt-dlp
         run: yt-dlp --version
+      - name: Verify ffmpeg
+        run: ffmpeg -version
+
 
