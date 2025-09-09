@@ -15,5 +15,3 @@ jobs:
         run: yt-dlp --version
       - name: Verify ffmpeg
         run: ffmpeg -version
-
-
