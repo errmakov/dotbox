@@ -1,2 +1,4 @@
 brew "python"
-brew "ffmpeg" 
+brew "ffmpeg"
+brew "exiftool"
+ 
